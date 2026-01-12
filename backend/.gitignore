@@ -1,3 +1,7 @@
+#dependency
 /.venv/
 
+#misc
 /__pycache__/
+.env
+
