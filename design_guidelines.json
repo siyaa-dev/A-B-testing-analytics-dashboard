@@ -1,0 +1,147 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a financial analytics dashboard that feels like a high-end decision cockpit, not a spreadsheet.",
+    "principles": [
+      "Fusion over Imitation: Mix Swiss precision with Fintech trust.",
+      "Emotion First: Data should feel calm and actionable, not overwhelming.",
+      "Content is King: Every chart tells a story.",
+      "Zoom In: Focus on the metric that matters.",
+      "Negative Space: Let the data breathe."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit",
+      "body": "Public Sans",
+      "mono": "JetBrains Mono"
+    },
+    "weights": {
+      "heading": "font-semibold",
+      "body": "font-normal",
+      "bold": "font-bold"
+    },
+    "usage": {
+      "h1": "text-4xl font-semibold tracking-tight text-primary",
+      "h2": "text-2xl font-medium tracking-tight text-primary",
+      "h3": "text-xl font-medium text-primary",
+      "body": "text-base text-muted-foreground leading-relaxed",
+      "caption": "text-sm text-muted-foreground uppercase tracking-wider",
+      "mono": "font-mono text-xs text-indigo-600 bg-indigo-50/50 px-1 rounded"
+    },
+    "installation": "Import fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Forest Green",
+        "hex": "#064E3B",
+        "tailwind": "bg-[#064E3B] text-white"
+      },
+      "secondary": {
+        "name": "Electric Indigo",
+        "hex": "#4F46E5",
+        "tailwind": "bg-[#4F46E5] text-white"
+      },
+      "background": {
+        "default": "#F8F9FA",
+        "paper": "#FFFFFF",
+        "dark": "#0F172A"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#64748B",
+        "muted": "#94A3B8"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#E11D48",
+        "info": "#3B82F6"
+      },
+      "charts": [
+        "#064E3B",
+        "#4F46E5",
+        "#10B981",
+        "#F59E0B",
+        "#E11D48"
+      ]
+    },
+    "rules": [
+      "Never use pure black (#000000). Use #0F172A.",
+      "Primary color (#064E3B) is for Brand Identity and High-Value Actions only.",
+      "Secondary color (#4F46E5) is for Active States and Data Highlights.",
+      "Backgrounds should be off-white (#F8F9FA) to reduce eye strain, with pure white (#FFFFFF) for cards."
+    ]
+  },
+  "layout": {
+    "grid_systems": {
+      "dashboard": {
+        "name": "Control Room Grid",
+        "classes": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6",
+        "rules": "Dense, information-rich. Widgets span 3, 4, or 6 columns."
+      },
+      "report": {
+        "name": "Tetris Grid",
+        "classes": "grid grid-cols-1 md:grid-cols-12 gap-8 p-8",
+        "rules": "Asymmetrical. Hero metrics span full width. Insights span 4 cols."
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto",
+      "section": "py-12",
+      "card_padding": "p-6"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Grid Borders",
+      "classes": "bg-white border border-slate-200 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-200",
+      "header": "border-b border-slate-100 pb-4 mb-4"
+    },
+    "buttons": {
+      "primary": "bg-[#064E3B] hover:bg-[#064E3B]/90 text-white font-medium px-6 py-2.5 rounded-lg shadow-sm transition-all active:scale-95",
+      "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 font-medium px-6 py-2.5 rounded-lg transition-all active:scale-95",
+      "ghost": "text-slate-600 hover:bg-slate-100 hover:text-slate-900 px-4 py-2 rounded-lg transition-colors"
+    },
+    "inputs": {
+      "classes": "h-11 border-slate-200 focus:border-[#4F46E5] focus:ring-[#4F46E5]/20 rounded-lg bg-white"
+    },
+    "charts": {
+      "library": "Recharts",
+      "style": "Minimalist. Remove grid lines where possible. Use custom tooltips."
+    }
+  },
+  "assets": {
+    "images": {
+      "user_avatars": [
+        {
+          "url": "https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzY4MDQxNjc2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Male User Grey Sweater"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1655249481446-25d575f1c054?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzY4MDQxNjc2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Female User Blue Dress"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1762522927402-f390672558d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzY4MDQxNjc2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Male User White Shirt"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1762522926157-bcc04bf0b10a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzY4MDQxNjc2fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Male User White Shirt Grey BG"
+        }
+      ]
+    },
+    "icons": "Lucide React (default). Use thin strokes (1.5px) for elegance."
+  },
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic gradients, no centered text blocks without purpose.",
+    "Micro-Interactions: Every button click, hover, and focus must have a state change.",
+    "Data-Test-ID: All interactive elements must have data-testid attributes.",
+    "Accessibility: Ensure 4.5:1 contrast ratio. Use APCA where possible.",
+    "Motion: Use 'sonner' for toasts. Use 'framer-motion' for layout transitions if needed, but keep it subtle (0.2s)."
+  ],
+  "instructions_to_main_agent": "You are building a high-trust financial dashboard. Precision is key. Do not round numbers unnecessarily. Use the 'Control Room' grid for the main dashboard. Use the 'Tetris' grid for the Business Insights page. Implement the 'Forest Green' and 'Electric Indigo' theme strictly. Use the provided image URLs for user profiles."
+}
